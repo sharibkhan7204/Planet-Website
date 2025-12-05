@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Science Gothic", sans-serif;
+
+}
+
+#homePageMainContainer{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dygejt2mm/image/upload/v1764961328/solar1_dcewj0.jpg");
+    background-size: cover;
+
+}
+
+
+/* --------------------------SUN DETAILS---------------------- */
+/* --------------------------SUN DETAILS---------------------- */
+
+.sunDetails {
+    position: absolute;
+    height: 240px;
+    width: 300px;
+    top: 20%;
+    right: 60%;
+}
+
+/* Make anchor fill the box */
+a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover Text */
+.sunDetails::after {
+    content: "Sun";
+    position: absolute;
+    inset: 0;                          /* FULL COVER – IMPORTANT */
+    color: rgb(252, 1, 1);
+    font-size: 26px;
+    font-weight: bold;  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;              /* allows clicking through */
+}
+
+/* Show text on hover */
+.sunDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------SUN DETAILS---------------------- */
+
+/* --------------------------Mercury DETAILS---------------------- */
+.murDetails{
+    height: 30px;
+    width: 140px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 54%;
+    right: 76.5%;
+    text-align: start;
+}
+
+.murDetails::after {
+    content: "Mercury";   /* <<< TEXT YOU WANT TO SHOW */
+    position: absolute;
+    color: rgb(211, 190, 117);
+    font-size: 16px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* Show text on hover */
+.murDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Mercury DETAILS---------------------- */
+/* --------------------------Venus DETAILS---------------------- */
+.veDetails{
+    height: 30px;
+    width: 140px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 60%;
+    right: 79%;
+    text-align: start;
+}
+
+.veDetails::after {
+    content: "Venus";   
+    position: absolute;
+    color: rgb(244, 156, 55);
+    font-size: 19px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    inset: 0;
+    pointer-events: none;
+    
+}
+
+
+.veDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Venus DETAILS---------------------- */
+/* --------------------------Earth DETAILS---------------------- */
+.eaDetails{
+    height: 35px;
+    width: 140px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 66.5%;
+    right: 81%;
+    text-align: start;
+}
+
+.eaDetails::after {
+    content: "Earth";   
+    position: absolute;
+    color: rgb(0, 84, 251);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+    
+}
+
+
+.eaDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Earth DETAILS---------------------- */
+/* --------------------------Mars DETAILS---------------------- */
+.marDetails{
+    height: 35px;
+    width: 120px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 72.5%;
+    right: 81%;
+    text-align: start;
+}
+
+.marDetails::after {
+    content: "Mars";   
+    position: absolute;
+    color: crimson;
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.marDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Mars DETAILS---------------------- */
+/* --------------------------Jupiter DETAILS---------------------- */
+.jupuDetails{
+    height: 170px;
+    width: 180px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 65%;
+    right: 68%;
+    text-align: start;
+    
+}
+
+.jupuDetails::after {
+    content: "Jupiter";   
+    position: absolute;
+    color:rgb(238, 165, 71);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.jupuDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Jupiter DETAILS---------------------- */
+/* --------------------------Saturn DETAILS---------------------- */
+.sattuDetails{
+    height: 180px;
+    width: 320px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 70%;
+    right: 45%;
+    text-align: start;
+}
+
+.sattuDetails::after {
+    content: "Saturn";   
+    position: absolute;
+    color:rgb(58, 57, 57);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.sattuDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Saturn DETAILS---------------------- */
+/* --------------------------Uranus DETAILS---------------------- */
+.uruDetails{
+    height: 130px;
+    width: 150px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 80%;
+    right: 32%;
+    text-align: start;
+}
+
+.uruDetails::after {
+    content: "Uranus";   
+    position: absolute;
+    color:rgb(23, 170, 181);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.uruDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Uranus DETAILS---------------------- */
+/* --------------------------Neptune DETAILS---------------------- */
+.nepDetails{
+    height: 130px;
+    width: 150px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 80%;
+    right: 18%;
+    text-align: start;
+}
+
+.nepDetails::after {
+    content: "Neptune";   
+    position: absolute;
+    color:rgb(2, 14, 145);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.nepDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Neptune DETAILS---------------------- */
+/* --------------------------Pluto DETAILS---------------------- */
+.pluDetails{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    /* border: solid 1px white; */
+    top: 79%;
+    right: 9%;
+    text-align: start;
+}
+
+.pluDetails::after {
+    content: "Pluto";   
+    position: absolute;
+    color:rgb(190, 185, 185);
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.pluDetails:hover::after {
+    opacity: 1;
+}
+
+
+/* --------------------------Pluto DETAILS---------------------- */
+
+  #allPlanetsBG{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dygejt2mm/image/upload/v1764961329/solar2_fqr1xh.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;                /* space between video + info */
+    padding: 40px;            /* gives breathing room */
+}
+
+.videoOut{
+    height: 80vh;
+    width: 30%;
+    border: 2px solid white;
+    overflow: hidden;         /* hides overflow inside video */
+    border-radius: 12px;
+}
+
+.videoOut video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.video-info{
+    height: 80vh;
+    width: 60%;
+    /* border: 2px solid white; */
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+ul{
+    gap: 10px;
+}
+
+
+
+.heading{
+    height: 300px;
+    width: 500px;
+    /* border: solid 2px white; */
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: crimson;
+}
+
+h1{
+    transition: 0.3s ease-in;
+}
+
+h1:hover{
+    transform: scale(1.2);
+    transform: translateX(1.1);
+    transition: 0.4s ease-out;
+}
